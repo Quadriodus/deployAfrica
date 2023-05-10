@@ -922,7 +922,7 @@ button {
   padding: 4.5% 5% 1.5% 5%;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 9rem;
 }
 
 .questionstextarea {
@@ -1536,6 +1536,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
   }
 
   .questionstextarea {
@@ -1961,6 +1962,7 @@ button {
     padding: 72px 24px 16px;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
   }
 
   .questionstextarea {
