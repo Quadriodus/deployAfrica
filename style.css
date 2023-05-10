@@ -221,6 +221,16 @@ body {
   width: 24px;
 }
 
+.marks .marksimg2 {
+  position: absolute;
+  top: 34%;
+  left: 69.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: 24px;
+  width: 24px;
+}
+
 .details {
   display: flex;
   align-items: center;
@@ -452,10 +462,10 @@ label {
 }
 
 .modal-content {
-  width: 440px !important;
-  height: 358px !important;
+  width: 360px !important;
+  /* height: 358px !important; */
   padding: 10px 20px 20px 20px;
-  margin: 0;
+  margin: 0 40px;
 }
 
 .closebut {
@@ -467,7 +477,7 @@ label {
   color: black !important;
 }
 .bi-x-lg {
-  font-size: 30px;
+  font-size: 20px;
   color: black !important;
 }
 
@@ -482,18 +492,19 @@ label {
 
 .corrimg {
   margin: auto;
+  width: 70px;
 }
 
 .appuser {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   color: #646768;
   text-align: center;
 }
 
 .pnote {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   color: #646768;
   text-align: center;
 }
