@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Africa</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body class="flex-container">
+    <div class="rootcon">
+
+        <div class="topnav">
+
+            <div>
+                <a href="./landingpage.html"><img src="./images/Deploy Africa Logo.svg" alt="deploy_logo"></a>
+            </div>
+
+            <!-- <div class="abtfaq">
+                <p class="abt mon">About</p>
+
+                <p class="faq mon">FAQ</p>
+            </div> -->
+
+            <!-- <div class="hamburgercon">
+                <i class="bi bi-list"></i>
+            </div> -->
+        </div>
+
+        <div class="consection1">
+
+            <div class="reg">
+                <p class="fsreg clash">Registration Form</p>
+            </div>
+
+            <div class=" marks p-bars2">
+
+                <div class="marks">
+                    <img class="marksimg" src="./images/Col2.svg" alt="mark_logo">
+                    <!-- <div class="main-circle-green"></div> -->
+
+                </div>
+
+
+                <div class="p-bar2"></div>
+
+
+                <div class="circle-green"></div>
+
+            </div>
+
+            <div class="details pt-2">
+                <p class=" fsprof mon">Personal Details</p>
+                <p class=" fsper mon">Professional Details</p>
+            </div>
+
+            <div class="flex-container2 mt-4">
+                <form action="">
+
+                    <div>
+                        <label class="fslabel mon" for="number">Interested Path</label>
+
+                        <select class="form-select workinput2 " aria-label=".form-select-sm example">
+                            <option class="fslabel mon" selected>Select your path of interest</option>
+                            <option value="1">Product Design</option>
+                            <option value="2">Frontend Development</option>
+                            <option value="3">Backend Development</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="fslabel mon" for="url">Portfolio or GitHub Link</label>
+
+                        <input class="workinput2" type="url" name="url" id="url"
+                            placeholder="Enter your portfolio or GitHub link here" pattern="https://.*" size=""
+                            required>
+
+                        <div class="d-flex gap-1">
+                            <img src="./images/Icon-WarningCircle.svg" alt="warning_icon">
+                            <label class="fslabelblue mon" for="url">If you have both links, be sure to separate them
+                                with a semi-colon (;)</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="fslabel mon" for="number">Years of Experience</label>
+
+                        <input class="workinput2" type="text" id="number" name="number" minlength="" maxlength="4"
+                            size="4" onkeypress="return restrictAlphabets(event) "
+                            placeholder="Enter your years of experience" />
+                    </div>
+
+                    <div>
+                        <label class="fslabel mon" for="name">Tech Stack</label>
+
+                        <input class="workinput2" type="text" id="name" name="name" required minlength="" maxlength=""
+                            size="" placeholder="Enter your tech stack(s) here" />
+                    </div>
+
+                    <div>
+                        <label class="fslabel mon" for="number">Do you have access to a computer?</label>
+
+                        <select class="form-select workinput2" aria-label=".form-select-sm example">
+                            <option class="fslabel mon" selected>Select a response</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="fslabel mon" for="number">Are you available to work onsite?</label>
+
+                        <select class="form-select workinput2" aria-label=".form-select-sm example">
+                            <option class="fslabel mon" selected>Select a response</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <div class="opttxt">
+                            <label class="fslabel mon" for="number">What can you describe as the most prominent
+                                challenge
+                                facing technology
+                                presently?
+                            </label>
+
+                            <label class="fslabelopt mon" for="number">Optional</label>
+                        </div>
+
+                        <textarea class="form-control workinput3" aria-label="With textarea"
+                            placeholder="Enter your reasons here"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="fslabel mon" for="number">
+                            Why should you be selected?
+                        </label>
+
+                        <textarea class="form-control workinput3" aria-label="With textarea"
+                            placeholder="Enter your reasons here"></textarea>
+                    </div>
+
+                    <div class="names">
+
+                        <div>
+                            <a class="a3 mon" href="./index.html"><i class="bi bi-arrow-left pr"></i> Prev</a>
+                        </div>
+
+                        <div>
+                            <a class="a4 mon" href="#myModal" data-toggle="modal">Submit Application</a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="pinbut"></div>
+
+        <div class="footer">
+            <div><img src="./images/Deploy Africa Logo.svg" alt="deploy_logo"></div>
+
+            <div>
+                <p class="txtfoot mon"> © 2023 Copyright, All Right Reserved.</p>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="closebut">
+                        <a href="./registrationPage.html"><i class="bi bi-x-lg"></i></a>
+                    </div>
+
+                    <div class="corr">
+                        <img class="corrimg" src="./images/CheckCircle.svg" alt="check_circle">
+                    </div>
+
+                    <div>
+                        <h1 class="appuser mon">Application Received</h1>
+                    </div>
+
+                    <div>
+                        <p class="pnote mon">Please note that we will review your application and only candidates
+                            progressing
+                            to
+                            the next stage will be contacted.</p>
+                    </div>
+
+                    <div class="corr pt-3">
+                        <a class="ok mon" href="./registrationPage.html">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        function restrictAlphabets(e) {
+            var x = e.which || e.keycode;
+            if ((x >= 48 && x <= 57))
+                return true
+            else
+                return false
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
