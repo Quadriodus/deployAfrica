@@ -456,6 +456,15 @@ label {
   align-items: baseline;
 }
 
+.footer-form {
+    padding: 1.5% 5% 1.5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+
+
 .txtfoot {
   font-weight: 400;
   font-size: 14px;
@@ -2277,7 +2286,90 @@ button {
   }
 }
 
-@media (min-width: 376px) and (max-width: 435px) {
+@media (min-width: 396px) and (max-width: 435px) {
+  /* #myModal .modal-dialog {
+          -webkit-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          top: 50%;
+          margin: 0 auto;
+        } 
+  
+     .modal-dialog {
+          width: 440px !important;
+          margin: 30px auto;
+        } */
+
+  .modal-content {
+    width: 300px !important;
+    padding: 10px 20px 20px 20px;
+    margin: 0 55px;
+  }
+
+  .closebut {
+    display: flex;
+    justify-content: flex-end;
+    color: black !important;
+  }
+  .close {
+    color: black !important;
+  }
+  .bi-x-lg {
+    font-size: 15px;
+    color: black !important;
+  }
+
+  .size {
+    font-size: 20px;
+  }
+
+  .corr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .corrimg {
+    margin: auto;
+    width: 60px;
+  }
+
+  .appuser {
+    font-weight: 700;
+    font-size: 17px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .pnote {
+    font-weight: 400;
+    font-size: 12px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .ok {
+    background-color: #02576c;
+    border: 1px solid #02576c;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 9px 20px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    color: #fdfefe !important;
+    font-weight: 500 !important;
+    width: 73px;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    width: 512px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 395px) {
   /* #myModal .modal-dialog {
         -webkit-transform: translate(0, -50%);
         -o-transform: translate(0, -50%);
