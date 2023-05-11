@@ -2025,7 +2025,7 @@ button {
 
   .accdtxt2 {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     color: #373939;
   }
 
@@ -2097,6 +2097,18 @@ button {
 
   .a3 {
     width: 100%;
+    background-color: #fafcfd;
+    border: none;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 12px 24px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    color: #02576c !important;
+    font-weight: 500 !important;
+    font-size: 16px;
+    font-weight: 500;
   }
 
   .a4 {
