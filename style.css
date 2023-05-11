@@ -457,13 +457,11 @@ label {
 }
 
 .footer-form {
-    padding: 1.5% 5% 1.5% 5%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-
+  padding: 1.5% 5% 1.5% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
 .txtfoot {
   font-weight: 400;
@@ -2111,13 +2109,13 @@ button {
 
   .fsper {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     color: #02576c;
   }
 
   .fsprof {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     color: #a3a9aa;
   }
 
