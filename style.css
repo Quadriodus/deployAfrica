@@ -373,7 +373,7 @@ label {
 }
 
 .names {
-  display: flex;
+  display: flex !important;
   gap: 1rem;
   display: block;
 }
@@ -476,10 +476,11 @@ label {
 }
 
 .modal-content {
-  width: 360px !important;
+  width: 406px !important;
   /* height: 358px !important; */
   padding: 10px 20px 20px 20px;
-  margin: 0 40px;
+  margin: auto;
+  border-radius: 8px !important;
 }
 
 .closebut {
@@ -506,19 +507,18 @@ label {
 
 .corrimg {
   margin: auto;
-  width: 70px;
 }
 
 .appuser {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   color: #646768;
   text-align: center;
 }
 
 .pnote {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   color: #646768;
   text-align: center;
 }
@@ -2061,10 +2061,10 @@ button {
   }
 
   .names {
-    display: flex;
+    display: flex !important;
     gap: 3rem;
     flex-direction: column;
-    display: none;
+    display: none !important;
   }
 
   .names2 {
@@ -2110,5 +2110,335 @@ button {
     font-weight: 400;
     font-size: 14px;
     color: #a3a9aa;
+  }
+
+  /* #myModal .modal-dialog {
+        -webkit-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        top: 50%;
+        margin: 0 auto;
+      } 
+
+   .modal-dialog {
+        width: 440px !important;
+        margin: 30px auto;
+      } 
+
+   .modal-content {
+    width: 320px !important;
+    padding: 10px 20px 20px 20px;
+    margin: auto;
+  }
+
+  .closebut {
+    display: flex;
+    justify-content: flex-end;
+    color: black !important;
+  }
+  .close {
+    color: black !important;
+  }
+  .bi-x-lg {
+    font-size: 20px;
+    color: black !important;
+  }
+
+  .size {
+    font-size: 20px;
+  }
+
+  .corr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .corrimg {
+    margin: auto;
+    width: 70px;
+  }
+
+  .appuser {
+    font-weight: 700;
+    font-size: 22px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .pnote {
+    font-weight: 400;
+    font-size: 13px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .ok {
+    background-color: #02576c;
+    border: 1px solid #02576c;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 12px 24px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    color: #fdfefe !important;
+    font-weight: 500 !important;
+    width: 73px;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    width: 512px;
+  }   */
+}
+
+@media (min-width: 436px) and (max-width: 550px) {
+  /* #myModal .modal-dialog {
+        -webkit-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        top: 50%;
+        margin: 0 auto;
+      } 
+
+   .modal-dialog {
+        width: 440px !important;
+        margin: 30px auto;
+      } */
+
+  .modal-content {
+    width: 320px !important;
+    padding: 10px 20px 20px 20px;
+    margin: auto;
+  }
+
+  .closebut {
+    display: flex;
+    justify-content: flex-end;
+    color: black !important;
+  }
+  .close {
+    color: black !important;
+  }
+  .bi-x-lg {
+    font-size: 20px;
+    color: black !important;
+  }
+
+  .size {
+    font-size: 20px;
+  }
+
+  .corr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .corrimg {
+    margin: auto;
+    width: 70px;
+  }
+
+  .appuser {
+    font-weight: 700;
+    font-size: 22px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .pnote {
+    font-weight: 400;
+    font-size: 13px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .ok {
+    background-color: #02576c;
+    border: 1px solid #02576c;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 12px 24px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    color: #fdfefe !important;
+    font-weight: 500 !important;
+    width: 73px;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    width: 512px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 435px) {
+  /* #myModal .modal-dialog {
+        -webkit-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        top: 50%;
+        margin: 0 auto;
+      } 
+
+   .modal-dialog {
+        width: 440px !important;
+        margin: 30px auto;
+      } */
+
+  .modal-content {
+    width: 300px !important;
+    padding: 10px 20px 20px 20px;
+    margin: 0 55px;
+  }
+
+  .closebut {
+    display: flex;
+    justify-content: flex-end;
+    color: black !important;
+  }
+  .close {
+    color: black !important;
+  }
+  .bi-x-lg {
+    font-size: 15px;
+    color: black !important;
+  }
+
+  .size {
+    font-size: 20px;
+  }
+
+  .corr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .corrimg {
+    margin: auto;
+    width: 60px;
+  }
+
+  .appuser {
+    font-weight: 700;
+    font-size: 17px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .pnote {
+    font-weight: 400;
+    font-size: 12px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .ok {
+    background-color: #02576c;
+    border: 1px solid #02576c;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 9px 20px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    color: #fdfefe !important;
+    font-weight: 500 !important;
+    width: 73px;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    width: 512px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  /* #myModal .modal-dialog {
+          -webkit-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          top: 50%;
+          margin: 0 auto;
+        } 
+  
+     .modal-dialog {
+          width: 440px !important;
+          margin: 30px auto;
+        } */
+
+  .modal-content {
+    width: 300px !important;
+    padding: 10px 20px 20px 20px;
+    margin: 0 35px;
+  }
+
+  .closebut {
+    display: flex;
+    justify-content: flex-end;
+    color: black !important;
+  }
+  .close {
+    color: black !important;
+  }
+  .bi-x-lg {
+    font-size: 15px;
+    color: black !important;
+  }
+
+  .size {
+    font-size: 20px;
+  }
+
+  .corr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .corrimg {
+    margin: auto;
+    width: 60px;
+  }
+
+  .appuser {
+    font-weight: 700;
+    font-size: 17px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .pnote {
+    font-weight: 400;
+    font-size: 12px;
+    color: #646768;
+    text-align: center;
+  }
+
+  .ok {
+    background-color: #02576c;
+    border: 1px solid #02576c;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 9px 20px !important;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    color: #fdfefe !important;
+    font-weight: 500 !important;
+    width: 73px;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    width: 512px;
   }
 }
