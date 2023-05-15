@@ -84,9 +84,12 @@
                     <div>
                         <label class="fslabel mon" for="number">Years of Experience</label>
 
-                        <input class="workinput2" type="text" id="number" name="number" minlength="" maxlength="4"
-                            size="4" onkeypress="return restrictAlphabets(event) "
-                            placeholder="Enter your years of experience" />
+                        <select class="form-select workinput2 " aria-label=".form-select-sm example">
+                            <option class="fslabel mon" selected>Enter your years of experience</option>
+                            <option value="1">Less than a year</option>
+                            <option value="2">1 - 2 years</option>
+                            <option value="3">2 years above</option>
+                        </select>
                     </div>
 
                     <div>
