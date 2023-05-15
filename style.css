@@ -384,10 +384,6 @@ label {
   display: block;
 }
 
-.names2 {
-  display: none;
-}
-
 .nxt {
   display: flex;
   gap: 1.5rem;
@@ -641,10 +637,6 @@ label {
   justify-content: center;
   align-items: center;
   gap: 15rem;
-}
-
-.tapcon2 {
-  display: none;
 }
 
 .tapconnote {
@@ -1226,16 +1218,7 @@ button {
   .tapcon {
     padding: 8.5% 5% 8.5% 5%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    display: none;
-  }
-
-  .tapcon2 {
-    flex-direction: column;
-    padding: 8.5% 5% 8.5% 5%;
-    display: block;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -1743,15 +1726,9 @@ button {
   }
 
   .tapcon {
-    flex-direction: column;
-    padding: 16px 0px 16px;
-    display: none;
-  }
-
-  .tapcon2 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 16px 24px 72px;
-    display: block;
+    row-gap: 1rem;
   }
 
   .laptopimg {
@@ -2082,16 +2059,8 @@ button {
 
   .names {
     display: flex !important;
-    gap: 3rem;
-    flex-direction: column;
-    display: none !important;
-  }
-
-  .names2 {
-    display: flex !important;
-    gap: 2rem !important;
-    flex-direction: column !important;
-    display: block;
+    gap: 2rem;
+    flex-direction: column-reverse;
   }
 
   .workinput {
