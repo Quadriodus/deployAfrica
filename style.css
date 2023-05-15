@@ -372,6 +372,12 @@ label {
   font-family: "Mona-Sans", sans-serif;
 }
 
+.namesmain {
+  display: flex !important;
+  gap: 1rem;
+  display: block;
+}
+
 .names {
   display: flex !important;
   gap: 1rem;
@@ -1081,7 +1087,7 @@ button {
   top: 0;
   left: 100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   display: block;
   z-index: 1;
   background-color: #fdfefe;
@@ -2065,6 +2071,12 @@ button {
 
   .mainwhycon {
     padding-top: 16px;
+  }
+
+  .namesmain {
+    display: flex !important;
+    gap: 1rem;
+    flex-direction: column;
   }
 
   .names {
