@@ -133,7 +133,6 @@ body {
 }
 
 .consection1 {
-  margin-top: 60px !important;
   margin: auto;
   background-color: #fafcfd;
   border-radius: 8px;
@@ -455,14 +454,12 @@ label {
   padding: 1.5% 5% 1.5% 5%;
   display: flex;
   justify-content: center;
-  align-items: baseline;
 }
 
 .footer-form {
   padding: 1.5% 5% 1.5% 5%;
   display: flex;
   justify-content: center;
-  align-items: baseline;
 }
 
 .txtfoot {
@@ -1043,7 +1040,6 @@ button {
   display: block;
   width: 35px;
   cursor: pointer;
-
   appearance: none;
   background: none;
   outline: none;
@@ -1108,6 +1104,78 @@ button {
   /* background-color: #24104f; */
   text-decoration: none;
   /* color: #2a2b2c; */
+}
+
+/* style for waitlist */
+.fsdw {
+  font-weight: 700;
+  font-size: 24px;
+  color: #47494a;
+  text-align: center;
+}
+
+.fseydtxt {
+  font-weight: 400;
+  font-size: 16px;
+  color: #838586;
+  text-align: center;
+}
+
+.fseydcon {
+  padding-top: 20px;
+}
+
+.consectionwaitlist {
+  margin-top: 60px !important;
+  margin: auto;
+  background-color: #fafcfd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px -1px rgba(34, 34, 34, 0.08),
+    0px 2px 4px -1px rgba(34, 34, 34, 0.06);
+  border: 1px solid #fafcfd;
+  max-width: 723px;
+  padding: 48px;
+}
+
+.a2 {
+  background-color: #02576c;
+  border: 1px solid #02576c;
+  border-radius: 8px;
+  border-collapse: collapse;
+  padding: 12px 24px !important;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  color: #fdfefe !important;
+  font-weight: 500 !important;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pinbutwaitlist {
+  border-bottom: 1px solid #eaecf0;
+  margin: 80px 0px 0px 0px;
+}
+
+.btn {
+  --bs-btn-padding-x: none !important;
+  --bs-btn-padding-y: none !important;
+}
+
+.fsmodal-jw {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fdfefe;
+  background-color: #02576c;
+  border: 1px solid #02576c;
+  border-radius: 8px;
+  border-collapse: collapse;
+  padding: 12px 24px !important;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  width: 140px;
 }
 
 @media (min-width: 768px) {
