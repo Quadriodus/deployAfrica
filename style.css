@@ -1178,6 +1178,15 @@ button {
   width: 140px;
 }
 
+.form-icon {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 9% !important;
+  width: calc(1rem + 24px);
+  height: calc(2.125rem + 2px);
+}
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
