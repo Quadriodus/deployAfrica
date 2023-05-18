@@ -7,3 +7,22 @@ window.onload = function () {
         mobile_menu.classList.toggle('is-active');
     });
 }
+
+var myInput = document.getElementById('myInput');
+var submitButton = document.getElementById('submitButton');
+
+myInput.addEventListener('input', function () {
+    if (myInput.value !== '') {
+        submitButton.disabled = false;
+        submitButton.classList.add('enabled');
+    } else {
+        submitButton.disabled = true;
+        submitButton.classList.remove('enabled');
+    }
+});
+
+function redirect() {
+    // if (confirm("Do you want to proceed?")) {
+    window.location.href = "registrationPage.html";
+    //}
+}

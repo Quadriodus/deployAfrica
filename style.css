@@ -23,6 +23,7 @@ body {
 
 .mon {
   font-family: "Mona-Sans", sans-serif;
+  /* font-style: italic; */
   /* font-family: "Mona Sans", sans-serif; */
 }
 
@@ -220,10 +221,14 @@ body {
   width: 24px;
 }
 
+.marks img {
+  max-width: none;
+}
+
 .marks .marksimg2 {
   position: absolute;
   top: 34%;
-  left: 69.5%;
+  left: 28.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   height: 24px;
@@ -389,7 +394,38 @@ label {
   align-items: center;
 }
 
-.a2 {
+.nxtcon {
+  position: relative;
+}
+
+.nxtcon .bi-arrow-right {
+  position: absolute;
+  top: 24%;
+  right: 42%;
+  cursor: pointer;
+  color: #fdfefe;
+  font-size: 20px;
+}
+
+#submitButton {
+  /* Disabled color */
+  background-color: #e6eef0;
+  border-radius: 8px;
+  border-collapse: collapse;
+  padding: 12px 24px !important;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  color: #fdfefe !important;
+  font-weight: 500 !important;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+#submitButton.enabled {
+  /* Enabled color */
   background-color: #02576c;
   border: 1px solid #02576c;
   border-radius: 8px;
@@ -402,7 +438,6 @@ label {
   font-weight: 500 !important;
   width: 100%;
   font-size: 16px;
-  font-weight: 500;
 }
 
 .a3 {
@@ -418,7 +453,6 @@ label {
   font-weight: 500 !important;
   width: 330.84px;
   font-size: 16px;
-  font-weight: 500;
 }
 
 .a4 {
@@ -1187,6 +1221,21 @@ button {
   width: calc(1rem + 24px);
   height: calc(2.125rem + 2px);
 }
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active {
+  background-color: #02576c;
+}
+
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover {
+  background-color: #0488a9;
+  color: #fdfefe;
+}
+
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
@@ -2205,6 +2254,15 @@ button {
     color: #2a2b2c;
   }
 
+  .nxtcon .bi-arrow-right {
+    position: absolute;
+    top: 24%;
+    right: 39%;
+    cursor: pointer;
+    color: #fdfefe;
+    font-size: 20px;
+  }
+
   /* #myModal .modal-dialog {
         -webkit-transform: translate(0, -50%);
         -o-transform: translate(0, -50%);
@@ -2368,6 +2426,15 @@ button {
     box-shadow: 0 !important;
     width: 512px;
   }
+
+  .nxtcon .bi-arrow-right {
+    position: absolute;
+    top: 24%;
+    right: 35%;
+    cursor: pointer;
+    color: #fdfefe;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 396px) and (max-width: 435px) {
@@ -2450,6 +2517,15 @@ button {
     -webkit-box-shadow: 0 !important;
     box-shadow: 0 !important;
     width: 512px;
+  }
+
+  .nxtcon .bi-arrow-right {
+    position: absolute;
+    top: 24%;
+    right: 33%;
+    cursor: pointer;
+    color: #fdfefe;
+    font-size: 20px;
   }
 }
 
@@ -2534,6 +2610,15 @@ button {
     box-shadow: 0 !important;
     width: 512px;
   }
+
+  .nxtcon .bi-arrow-right {
+    position: absolute;
+    top: 24%;
+    right: 32%;
+    cursor: pointer;
+    color: #fdfefe;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
@@ -2616,5 +2701,14 @@ button {
     -webkit-box-shadow: 0 !important;
     box-shadow: 0 !important;
     width: 512px;
+  }
+
+  .nxtcon .bi-arrow-right {
+    position: absolute;
+    top: 24%;
+    right: 29%;
+    cursor: pointer;
+    color: #fdfefe;
+    font-size: 20px;
   }
 }
