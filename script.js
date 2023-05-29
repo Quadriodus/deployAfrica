@@ -8,24 +8,24 @@ window.onload = function () {
     });
 }
 
-var myInput = document.getElementById('myInput');
-var submitButton = document.getElementById('submitButton');
+// var myInput = document.getElementById('myInput');
+// var submitButton = document.getElementById('submitButton');
 
-myInput.addEventListener('input', function () {
-    if (myInput.value !== '') {
-        submitButton.disabled = false;
-        submitButton.classList.add('enabled');
-    } else {
-        submitButton.disabled = true;
-        submitButton.classList.remove('enabled');
-    }
-});
+// myInput.addEventListener('input', function () {
+//     if (myInput.value !== '') {
+//         submitButton.disabled = false;
+//         submitButton.classList.add('enabled');
+//     } else {
+//         submitButton.disabled = true;
+//         submitButton.classList.remove('enabled');
+//     }
+// });
 
-function redirect() {
-    // if (confirm("Do you want to proceed?")) {
-    window.location.href = "registrationPage.html";
-    //}
-}
+// function redirect() {
+//     // if (confirm("Do you want to proceed?")) {
+//     window.location.href = "registrationPage.html";
+//     //}
+// }
 
 const passwordInput = document.getElementById('password-input');
 const togglePassword = document.getElementById('toggle-password');
