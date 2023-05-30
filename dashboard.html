@@ -117,7 +117,24 @@
                         </h3>
                     </div>
 
-                    <div class="d-flex">
+                    <div class="d-flex ">
+
+                        <div class="dropdown pr">
+                            <button class="dropdown-btn">
+                                <span> Date </span><em class="icon ni ni-calendar"></em>
+                                <!-- Replace with your desired icon class -->
+                            </button>
+                            <div class="dropdown-content ">
+                                <!-- Dropdown content here -->
+
+                                <h4 class=" todcon fstarapplications mon">Today</h4>
+
+                                <h4 class=" todcon fstarapplications mon">Yesterday</h4>
+
+                                <h4 class=" todcon fstarapplications mon">Later</h4>
+
+                            </div>
+                        </div>
 
                         <div class="d-flex align-items-center">
 
@@ -261,7 +278,7 @@
                                         <td>Frontend Development</td>
                                         <td>9/12/2022, 09:22 am</td>
                                         <td>
-                                            <h4 class="fsperdetpending mon">pending</h4>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
                                         </td>
                                         <td> <a href="./pendingpage.html"> <em
                                                     class="icon ni ni-chevron-right"></em></a></td>
@@ -620,6 +637,17 @@
 
     </div>
 
+    <script>
+        // If you want to add additional functionality with JavaScript
+        // For example, closing the dropdown when clicking outside
+        document.addEventListener("click", function (event) {
+            var dropdown = document.querySelector(".dropdown");
+            if (!dropdown.contains(event.target)) {
+                var dropdownContent = dropdown.querySelector(".dropdown-content");
+                dropdownContent.style.display = "none";
+            }
+        });
+    </script>
     <!-- JavaScript -->
     <script src="./assets/js/bundle.js?ver=1.9.2"></script>
     <script src="./assets/js/libs/datatable-btns.js"></script>
