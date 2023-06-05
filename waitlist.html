@@ -80,20 +80,12 @@
 
                 <div class="d-flex">
 
-                    <div class="dropdown pr">
-                        <button class="dropdown-btn">
-                            <span> Date </span><em class="icon ni ni-calendar"></em>
-                            <!-- Replace with your desired icon class -->
-                        </button>
-                        <div class="dropdown-content ">
-                            <!-- Dropdown content here -->
-
-                            <h4 class=" todcon fstarapplications mon">Today</h4>
-
-                            <h4 class=" todcon fstarapplications mon">Yesterday</h4>
-
-                            <h4 class=" todcon fstarapplications mon">Later</h4>
-
+                    <div class="Mydropdown pr">
+                        <button class="Mydropdown-btn">Date<em class="icon ni ni-calendar pl"></em></button>
+                        <div class="Mydropdown-content">
+                            <a class="mon" href="#">Today</a>
+                            <a class="mon" href="#">Yesterday</a>
+                            <a class="mon" href="#">Later</a>
                         </div>
                     </div>
 
@@ -135,70 +127,81 @@
                         <tr class="odd">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff')"></em>
+                            </td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="even">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff2">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff2')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="odd">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff3">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff3')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="even">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff4">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff4')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="odd">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff5">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff5')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="even">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff6">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff6')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="odd">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff7">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff7')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="even">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff8">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff8')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="odd">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff9">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff9')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
                         <tr class="even">
 
                             <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
-                            <td>aemmanuel@gmail.com</td>
+                            <td class="ali-copy" id="tff10">aemmanuel@gmail.com<em class="icon ni ni-copy pl2"
+                                    onclick="copyText('#tff10')"></em></td>
                             <td>9/12/2022, 09:22 am</td>
 
                         </tr>
@@ -209,9 +212,46 @@
 
     </div>
 
+    <script>
+        copyText(elementId)
+        function copyText(elementId) {
+            const element = document.querySelector(elementId);
+            let text;
+            text = element.innerText;
+            const tempTextArea = document.createElement("textarea");
+            tempTextArea.value = text;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempTextArea);
+        }
+
+    </script>
+
+    <script>
+
+        // Get the dropdown button and content elements
+        var dropdownBtn = document.querySelector(".Mydropdown-btn");
+        var dropdownContent = document.querySelector(".Mydropdown-content");
+
+        // Toggle the dropdown content when the button is clicked
+        dropdownBtn.addEventListener("click", function () {
+            dropdownContent.classList.toggle("show");
+        });
+
+        // Close the dropdown content if the user clicks outside of it
+        window.addEventListener("click", function (event) {
+            if (!event.target.matches(".Mydropdown-btn")) {
+                if (dropdownContent.classList.contains("show")) {
+                    dropdownContent.classList.remove("show");
+                }
+            }
+        });
+
+    </script>
     <!-- JavaScript -->
     <script src="./assets/js/bundle.js?ver=1.9.2"></script>
-    <script src="./assets/js/datatable-btns.js"></script>
+    <!-- <script src="./assets/js/datatable-btns.js"></script> -->
     <script src="./assets/js/scripts.js?ver=1.9.2"></script>
     <script src="./assets/js/charts/chart-analytics.js?ver=1.9.2"></script>
     <script src="./assets/js/example-chart.js?ver=1.9.2"></script>

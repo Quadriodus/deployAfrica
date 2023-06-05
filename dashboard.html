@@ -99,14 +99,34 @@
 
             <div class="card-inner">
                 <ul class="nav nav-tabs mt-n3" role="tablist">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" data-bs-toggle="tab"
-                            href="#tabItem1" aria-selected="true" role="tab">All applications</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tabItem2"
-                            aria-selected="false" role="tab" tabindex="-1">Accepted
-                            Applications</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#tabItem3"
-                            aria-selected="false" role="tab" tabindex="-1">Rejected
-                            Applications</a></li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#tabItem1" aria-selected="true"
+                            role="tab">All applications
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tabItem2" aria-selected="false" role="tab"
+                            tabindex="-1">Pending
+                            Applications
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tabItem3" aria-selected="false" role="tab"
+                            tabindex="-1">Accepted
+                            Applications
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tabItem4" aria-selected="false" role="tab"
+                            tabindex="-1">Rejected
+                            Applications
+                        </a>
+                    </li>
+
                 </ul>
 
                 <div class="pagetabnavcon">
@@ -119,22 +139,15 @@
 
                     <div class="d-flex ">
 
-                        <div class="dropdown pr">
-                            <button class="dropdown-btn">
-                                <span> Date </span><em class="icon ni ni-calendar"></em>
-                                <!-- Replace with your desired icon class -->
-                            </button>
-                            <div class="dropdown-content ">
-                                <!-- Dropdown content here -->
-
-                                <h4 class=" todcon fstarapplications mon">Today</h4>
-
-                                <h4 class=" todcon fstarapplications mon">Yesterday</h4>
-
-                                <h4 class=" todcon fstarapplications mon">Later</h4>
-
+                        <div class="Mydropdown pr">
+                            <button class="Mydropdown-btn">Date<em class="icon ni ni-calendar pl"></em></button>
+                            <div class="Mydropdown-content">
+                                <a class="mon" href="#">Today</a>
+                                <a class="mon" href="#">Yesterday</a>
+                                <a class="mon" href="#">Later</a>
                             </div>
                         </div>
+
 
                         <div class="d-flex align-items-center">
 
@@ -194,10 +207,10 @@
                                         <td>Frontend Development</td>
                                         <td>9/12/2022, 09:22 am</td>
                                         <td>
-                                            <h4 class="fsperdetaccepted mon">Accepted</h4>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
                                         </td>
-                                        <td> <a href="./acceptedpage.html"><em
-                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                        <td><a href="./pendingpage.html"><em class="icon ni ni-chevron-right"></em></a>
+                                        </td>
                                     </tr>
                                     <tr class="even">
                                         <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
@@ -206,10 +219,10 @@
                                         <td>Product Design</td>
                                         <td>9/12/2022, 09:22 am</td>
                                         <td>
-                                            <h4 class="fsperdetaccepted mon">Accepted</h4>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
                                         </td>
-                                        <td> <a href="./acceptedpage.html"> <em
-                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                        <td> <a href="./pendingpage.html"><em class="icon ni ni-chevron-right"></em></a>
+                                        </td>
                                     </tr>
                                     <tr class="odd">
                                         <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
@@ -218,10 +231,10 @@
                                         <td>Frontend Development</td>
                                         <td>9/12/2022, 09:22 am</td>
                                         <td>
-                                            <h4 class="fsperdetaccepted mon">Accepted</h4>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
                                         </td>
-                                        <td> <a href="./acceptedpage.html"> <em class="icon ni ni-chevron-right"></em>
-                                            </a></td>
+                                        <td> <a href="./pendingpage.html"><em class="icon ni ni-chevron-right"></em></a>
+                                        </td>
                                     </tr>
                                     <tr class="even">
                                         <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
@@ -314,6 +327,165 @@
                     </div>
 
                     <div class="tab-pane" id="tabItem2" role="tabpanel">
+
+                        <div class="my-3">
+                            <table class="w-100 " id="dashboardTable">
+                                <thead>
+                                    <tr>
+                                        <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                                            rowspan="1" colspan="1" aria-sort="ascending"
+                                            aria-label="Name: activate to sort column descending">Name</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="EMAIL ADDRESS: activate to sort column ascending">
+                                            EMAIL ADDRESS</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="PHONE NUMBER: activate to sort column ascending">
+                                            PHONE NUMBER
+                                        </th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="INTERESTED PATH: activate to sort column ascending">
+                                            INTERESTED PATH</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="DATE APPLIED: activate to sort column ascending">
+                                            DATE APPLIED
+                                        </th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="STATUS: activate to sort column ascending">STATUS
+                                        </th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="NEXT: activate to sort column ascending">
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Frontend Development</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"><em class="icon ni ni-chevron-right"></em></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Product Design</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em
+                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Frontend Development</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em class="icon ni ni-chevron-right"></em>
+                                            </a></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Product Design</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em class="icon ni ni-chevron-right"></em>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Product Design</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em class="icon ni ni-chevron-right"></em>
+                                            </a></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Product Design</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em
+                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Product Design</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em
+                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Frontend Development</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em
+                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Frontend Development</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em
+                                                    class="icon ni ni-chevron-right"></em></a></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adetunji Emmanuel</td>
+                                        <td>aemmanuel@gmail.com</td>
+                                        <td>+234 801 234 5678</td>
+                                        <td>Frontend Development</td>
+                                        <td>9/12/2022, 09:22 am</td>
+                                        <td>
+                                            <h4 class="fsperdetpending mon">Pending</h4>
+                                        </td>
+                                        <td> <a href="./pendingpage.html"> <em class="icon ni ni-chevron-right"></em>
+                                            </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="tabItem3" role="tabpanel">
 
                         <div class=" my-3">
                             <table class="w-100 " id="dashboardTable">
@@ -470,7 +642,7 @@
 
                     </div>
 
-                    <div class="tab-pane" id="tabItem3" role="tabpanel">
+                    <div class="tab-pane" id="tabItem4" role="tabpanel">
 
                         <div class=" my-3">
                             <table class="w-100 " id="dashboardTable">
@@ -638,16 +810,27 @@
     </div>
 
     <script>
-        // If you want to add additional functionality with JavaScript
-        // For example, closing the dropdown when clicking outside
-        document.addEventListener("click", function (event) {
-            var dropdown = document.querySelector(".dropdown");
-            if (!dropdown.contains(event.target)) {
-                var dropdownContent = dropdown.querySelector(".dropdown-content");
-                dropdownContent.style.display = "none";
+
+        // Get the dropdown button and content elements
+        var dropdownBtn = document.querySelector(".Mydropdown-btn");
+        var dropdownContent = document.querySelector(".Mydropdown-content");
+
+        // Toggle the dropdown content when the button is clicked
+        dropdownBtn.addEventListener("click", function () {
+            dropdownContent.classList.toggle("show");
+        });
+
+        // Close the dropdown content if the user clicks outside of it
+        window.addEventListener("click", function (event) {
+            if (!event.target.matches(".Mydropdown-btn")) {
+                if (dropdownContent.classList.contains("show")) {
+                    dropdownContent.classList.remove("show");
+                }
             }
         });
+
     </script>
+
     <!-- JavaScript -->
     <script src="./assets/js/bundle.js?ver=1.9.2"></script>
     <script src="./assets/js/libs/datatable-btns.js"></script>
