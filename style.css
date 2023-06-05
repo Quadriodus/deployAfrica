@@ -1222,7 +1222,7 @@ button {
   margin-left: 5px;
 }
 
-.accordion .active:after {
+#accordion .active:after {
   content: "\2212";
 }
 
@@ -2120,7 +2120,7 @@ button {
 .fscontusemail {
   font-weight: 400;
   font-size: 18px;
-  color: #646768;
+  color: #646768 !important;
 }
 
 .gapcontus {
@@ -2135,6 +2135,30 @@ button {
 .innergapcontus {
   display: flex;
 }
+
+.consection-acceptancemail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fdfefe;
+  width: 491px;
+  height: 665px;
+  border-radius: 1px solid #fdfefe;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.deploylogo-mail {
+  width: 100%;
+}
+
+.fsmailtxt1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+
 @media (min-width: 1160px) and (max-width: 1205px) {
   /* .conside {
     display: none;
