@@ -589,6 +589,26 @@ label {
   font-weight: 500;
 }
 
+.a6 {
+  width: 100%;
+  background-color: #fafcfd;
+  border: none;
+  border-radius: 8px;
+  border-collapse: collapse;
+  padding: 12px 24px !important;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  color: #02576c !important;
+  font-weight: 500 !important;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .pl {
   padding-left: 10px;
 }
@@ -1338,6 +1358,10 @@ button {
   padding-top: 20px;
 }
 
+.fseydcon2 {
+  padding-top: 10px;
+}
+
 .consectionwaitlist {
   margin-top: 60px !important;
   margin: auto;
@@ -1391,6 +1415,21 @@ button {
   width: 140px;
 }
 
+.fsmodal-jw2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fdfefe;
+  background-color: #02576c;
+  border: 1px solid #02576c;
+  border-radius: 8px;
+  border-collapse: collapse;
+  padding: 12px 24px !important;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  /* width: 140px; */
+}
+
 .form-icon {
   position: absolute;
   display: inline-flex;
@@ -1428,9 +1467,28 @@ button {
   padding: 48px;
 }
 
+.consectionresetsuccessful {
+  margin-top: 180px !important;
+  margin: auto;
+  background-color: #fafcfd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px -1px rgba(34, 34, 34, 0.08),
+    0px 2px 4px -1px rgba(34, 34, 34, 0.06);
+  border: 1px solid #fafcfd;
+  max-width: 455px;
+  padding: 48px;
+}
+
 .fslog-in {
   font-weight: 700;
   font-size: 24px;
+  color: #47494a;
+  text-align: center;
+}
+
+.fslog-in2 {
+  font-weight: 700;
+  font-size: 27px;
   color: #47494a;
   text-align: center;
 }
@@ -1586,12 +1644,6 @@ button {
 
 .conwelcomeadmin {
   padding: 45px 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.conwelcomeadmin2 {
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -2157,6 +2209,53 @@ button {
   font-weight: 600;
   font-size: 16px;
   color: #000000;
+}
+
+.forgotpasscon .ni-chevron-left {
+  font-size: 20px;
+}
+
+.illustration-img {
+  margin: auto;
+  display: flex;
+}
+
+.form-check-input:checked {
+  background-color: #02576c;
+  border-color: #02576c;
+}
+
+.form-check-input:focus {
+  border-color: #02576c;
+  outline: 0;
+  box-shadow: none;
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e"); */
+}
+
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:checked {
+  background-position: right center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.welcome-admincon {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-check label {
+  display: flex !important;
+}
+
+.form-switch {
+  padding-left: 2.5em;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1160px) and (max-width: 1205px) {
