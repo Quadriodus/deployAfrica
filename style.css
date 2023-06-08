@@ -2101,7 +2101,7 @@ button {
 }
 
 .box:hover {
-  flex: 1 1 40%;
+  flex: 1 1 30%;
 }
 
 .box:hover > img {
@@ -2332,6 +2332,10 @@ button {
     box-sizing: border-box;
     height: 65vh;
   }
+
+  .box:hover {
+    flex: 1 1 30%;
+  }
 }
 
 @media (min-width: 950px) and (max-width: 1190px) {
@@ -2341,6 +2345,10 @@ button {
     /* padding: 4% 2%; */
     box-sizing: border-box;
     height: 65vh;
+  }
+
+  .box:hover {
+    flex: 1 1 30%;
   }
 }
 
@@ -3471,6 +3479,10 @@ button {
     /* padding: 4% 2%; */
     box-sizing: border-box;
     height: 65vh;
+  }
+
+  .box:hover {
+    flex: 1 1 30%;
   }
 }
 
