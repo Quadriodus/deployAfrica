@@ -842,7 +842,7 @@ label {
   }
 }
 .slider {
-  height: 100px;
+  height: 120px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -2178,6 +2178,7 @@ button {
 .gapcontus {
   display: flex;
   gap: 7rem;
+  justify-content: center;
 }
 
 .imgcontus {
@@ -3201,7 +3202,7 @@ button {
   }
 
   .whycon {
-    padding-top: 72px;
+    padding-top: 50px;
   }
 
   .fsyg {
@@ -3261,6 +3262,7 @@ button {
     justify-content: center;
     height: 290px;
     padding: 0;
+    margin-top: 40px;
   }
 
   .blackcon .personimg {
@@ -3296,7 +3298,7 @@ button {
   }
 
   .questionscon {
-    padding: 72px 24px 16px;
+    padding: 40px 24px 16px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -3727,7 +3729,8 @@ button {
   .container-img {
     display: flex;
     width: 100%;
-    /* padding: 4% 2%; */
+    padding: 4% 0%;
+    margin: 20px 0px;
     box-sizing: border-box;
     height: 40vh;
   }
