@@ -1880,13 +1880,13 @@ button {
   background-color: #f8f8f8;
 }
 
-#dashboardTable tr th,
-#dashboardTable tr td {
+.dashboardTable tr th,
+.dashboardTable tr td {
   padding: 16px 8px;
   border-bottom: 1px solid#EAECF0;
 }
 
-#dashboardTable tr th {
+.dashboardTable tr th {
   background-color: #f8f8f8;
 }
 
@@ -2021,7 +2021,7 @@ button {
   padding-right: 30px;
 }
 
-#dashboardTable .ni-chevron-right {
+.dashboardTable .ni-chevron-right {
   font-size: 23px;
   color: #9ca1a5;
 }
