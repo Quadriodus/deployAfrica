@@ -18,38 +18,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="flex-container">
-    <div class="rootcon">
+<body>
 
-        <div class="conside">
-            <div id="sidebar" class="py-4 sidebar">
+    <main>
 
-                <div class=" d-flex flex-column">
+        <aside id="sidebar" class="py-4 sidebar">
 
-                    <div class="d-flex conab gap-5 align-items-center">
+            <div class=" d-flex flex-column">
 
-                        <img src="./images/Deploy Africa Logodash.svg" alt="">
+                <div class="d-flex conab gap-5 align-items-center">
 
-                    </div>
+                    <img src="./images/Frame 1000003189.svg" alt="deploy.africa-logo">
 
-
-                    <a class=" activesidebar mon" href="# ">
-                        <i class="bi bi-columns-gap pad"></i>Dashboard
-                    </a>
-
-                    <a class="mon" href="./waitlist.html"><i class="bi bi-list-ul pad"></i>Waitlist
-                    </a>
                 </div>
 
-                <div class="d-flex flex-column pinbutsidebar">
-                    <a class="mon" href="#news"><i class="bi bi-box-arrow-right pad"></i> Logout </a>
-                </div>
+
+                <a class=" activesidebar mon" href="# ">
+                    <i class="bi bi-columns-gap pad"></i>Dashboard
+                </a>
+
+                <a class="mon" href="./waitlist.html"><i class="bi bi-list-ul pad"></i>Waitlist
+                </a>
+
             </div>
-        </div>
 
-        <div class="consection">
+            <div class="d-flex flex-column pinbutsidebar">
+                <a class="mon" href="#news"><i class="bi bi-box-arrow-right pad"></i> Logout </a>
+            </div>
 
-            <div class="condash dashbut">
+        </aside>
+
+        <section class="consection">
+
+            <section class="condash dashbut">
+
                 <div class=" gap-3 res-sidebar">
                     <div>
                         <a href="#"> <i class="bi bi-list"></i></a>
@@ -62,24 +64,29 @@
 
                 <div class="conadmin">
                     <h2 class="fsadmin mon">Admin</h2>
-                    <img src="./images/Avatar.svg" alt="">
+                    <img src="./images/Avatar.svg" alt="avatar-img">
                 </div>
-            </div>
 
-            <div class="pinbutdash"></div>
+            </section>
 
-            <div class="conwelcomeadmin">
+            <section class="pinbutdash"></section>
 
-                <div class="welcome-admincon">
-                    <h2 class="mon fsweladmin">Welcome Admin</h2>
+            <section class="conwelcomeadmin">
+
+                <section class="welcome-admincon">
+
+                    <div>
+                        <h2 class="mon fsweladmin">Welcome Admin</h2>
+                    </div>
 
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                         <label class="form-check-label" for="flexSwitchCheckChecked">Registration</label>
                     </div>
-                </div>
 
-                <div class="conapplications">
+                </section>
+
+                <section class="conapplications">
 
                     <div class="inner-conapp">
                         <h3 class="fsnum mon">34</h3>
@@ -101,11 +108,13 @@
                             <p class="fstarapplications mon">Rejected Applications</p>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                </section>
 
-            <div class="card-inner">
+            </section>
+
+            <section class="card-inner">
+
                 <ul class="nav nav-tabs mt-n3" role="tablist">
 
                     <li class="nav-item" role="presentation">
@@ -137,12 +146,11 @@
 
                 </ul>
 
-                <div class="pagetabnavcon">
+                <section class="pagetabnavcon">
 
-                    <div>
-                        <h3 class="numapplications mon">
-                            <span class="numapplications2 mon">34 </span>Applications
-                        </h3>
+                    <div class="deploy-search">
+                        <label class="" for=""><em class="icon ni ni-search"></em></label>
+                        <input class="deploy-searchinput" type="search" id="search" name="search" />
                     </div>
 
                     <div class="d-flex ">
@@ -172,14 +180,14 @@
 
                     </div>
 
-                </div>
+                </section>
 
-                <div class="tab-content">
+                <section class="tab-content">
 
-                    <div class="tab-pane active show" id="tabItem1" role="tabpanel">
+                    <section class="tab-pane active show" id="tabItem1" role="tabpanel">
 
                         <div class="my-3">
-                            <table class="w-100 " class="dashboardTable">
+                            <table class="w-100 " id="dashboardTable">
                                 <thead>
                                     <tr>
                                         <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
@@ -253,7 +261,8 @@
                                         <td>
                                             <h4 class="fsperdetrejection mon">Rejected</h4>
                                         </td>
-                                        <td> <a href="./rejection.html"> <em class="icon ni ni-chevron-right"></em> </a>
+                                        <td> <a href="./rejection.html"> <em class="icon ni ni-chevron-right"></em>
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr class="odd">
@@ -332,12 +341,12 @@
                             </table>
                         </div>
 
-                    </div>
+                    </section>
 
-                    <div class="tab-pane" id="tabItem2" role="tabpanel">
+                    <section class="tab-pane" id="tabItem2" role="tabpanel">
 
                         <div class="my-3">
-                            <table class="w-100 " class="dashboardTable">
+                            <table class="w-100 " id="dashboardTable">
                                 <thead>
                                     <tr>
                                         <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
@@ -491,12 +500,12 @@
                             </table>
                         </div>
 
-                    </div>
+                    </section>
 
-                    <div class="tab-pane" id="tabItem3" role="tabpanel">
+                    <section class="tab-pane" id="tabItem3" role="tabpanel">
 
                         <div class=" my-3">
-                            <table class="w-100 " class="dashboardTable">
+                            <table class="w-100 " id="dashboardTable">
                                 <thead>
                                     <tr>
                                         <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
@@ -648,12 +657,12 @@
                             </table>
                         </div>
 
-                    </div>
+                    </section>
 
-                    <div class="tab-pane" id="tabItem4" role="tabpanel">
+                    <section class="tab-pane" id="tabItem4" role="tabpanel">
 
                         <div class=" my-3">
-                            <table class="w-100 " class="dashboardTable">
+                            <table class="w-100 " id="dashboardTable">
                                 <thead>
                                     <tr>
                                         <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
@@ -806,47 +815,47 @@
                             </table>
                         </div>
 
-                    </div>
+                    </section>
 
-                </div>
+                </section>
 
-            </div>
+            </section>
 
+        </section>
 
-        </div>
+        <script>
 
-    </div>
+            // Get the dropdown button and content elements
+            var dropdownBtn = document.querySelector(".Mydropdown-btn");
+            var dropdownContent = document.querySelector(".Mydropdown-content");
 
-    <script>
+            // Toggle the dropdown content when the button is clicked
+            dropdownBtn.addEventListener("click", function () {
+                dropdownContent.classList.toggle("show");
+            });
 
-        // Get the dropdown button and content elements
-        var dropdownBtn = document.querySelector(".Mydropdown-btn");
-        var dropdownContent = document.querySelector(".Mydropdown-content");
-
-        // Toggle the dropdown content when the button is clicked
-        dropdownBtn.addEventListener("click", function () {
-            dropdownContent.classList.toggle("show");
-        });
-
-        // Close the dropdown content if the user clicks outside of it
-        window.addEventListener("click", function (event) {
-            if (!event.target.matches(".Mydropdown-btn")) {
-                if (dropdownContent.classList.contains("show")) {
-                    dropdownContent.classList.remove("show");
+            // Close the dropdown content if the user clicks outside of it
+            window.addEventListener("click", function (event) {
+                if (!event.target.matches(".Mydropdown-btn")) {
+                    if (dropdownContent.classList.contains("show")) {
+                        dropdownContent.classList.remove("show");
+                    }
                 }
-            }
-        });
+            });
 
-    </script>
+        </script>
 
-    <!-- JavaScript -->
-    <script src="./assets/js/bundle.js?ver=1.9.2"></script>
-    <script src="./assets/js/libs/datatable-btns.js"></script>
-    <script src="./assets/js/scripts.js?ver=1.9.2"></script>
-    <script src="./assets/js/charts/chart-analytics.js?ver=1.9.2"></script>
-    <script src="./assets/js/example-chart.js?ver=1.9.2"></script>
-    <script src="./assets/js/libs/jqvmap.js?ver=1.9.2"></script>
-    <script src="./assets/js/charts/chart-ecommerce.js?ver=1.9.2"></script>
+        <!-- JavaScript -->
+        <script src="./assets/js/bundle.js?ver=1.9.2"></script>
+        <script src="./assets/js/libs/datatable-btns.js"></script>
+        <script src="./assets/js/scripts.js?ver=1.9.2"></script>
+        <script src="./assets/js/charts/chart-analytics.js?ver=1.9.2"></script>
+        <script src="./assets/js/example-chart.js?ver=1.9.2"></script>
+        <script src="./assets/js/libs/jqvmap.js?ver=1.9.2"></script>
+        <script src="./assets/js/charts/chart-ecommerce.js?ver=1.9.2"></script>
+
+    </main>
+
 </body>
 
 </html>

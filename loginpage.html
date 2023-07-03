@@ -19,22 +19,25 @@
 
 </head>
 
-<body class="flex-container">
-    <div class="rootcon">
+<body>
 
-        <div class="topnav">
+    <main>
+
+        <nav class="topnav">
 
             <div>
-                <a href="./index.html"><img src="./images/Deploy Africa Logo.svg" alt="deploy_logo"></a>
+                <a href="./index.html"><img src="./images/Frame 1000003188.svg" alt="deploy.africa-logo"></a>
             </div>
 
-        </div>
+        </nav>
 
-        <div class="consectionlogin">
+        <section class="consectionlogin">
 
-            <h1 class="fslog-in clash">
-                Login
-            </h1>
+            <div>
+                <h1 class="fslog-in clash">
+                    Login
+                </h1>
+            </div>
 
             <div class="flex-container2 ">
 
@@ -60,47 +63,45 @@
                         </div>
                     </div>
 
-                    <a href="./dashboard.html" class="a2  mon"> Login
-
-                    </a>
+                    <a href="./dashboard.html" class="a2  mon"> Login </a>
 
                 </form>
+
             </div>
 
-        </div>
+        </section>
 
+        <section class="pinbutlogin"></section>
 
-        <div class="pinbutlogin"></div>
+        <footer class="footer-login">
 
-        <div class="footer-login">
             <div>
                 <p class="txtfoot mon"> © 2023 Copyright, All Right Reserved.</p>
             </div>
-        </div>
 
+        </footer>
 
-    </div>
+        <script>
+            const togglePassword = document.querySelector("#togglePassword");
+            const password = document.querySelector("#password-3");
 
-    <script>
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password-3");
+            togglePassword.addEventListener("click", function () {
+                // toggle the type attribute
+                const type = password.getAttribute("type") === "password" ? "text" : "password";
+                password.setAttribute("type", type);
 
-        togglePassword.addEventListener("click", function () {
-            // toggle the type attribute
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-
-            // toggle the icon
-            this.classList.toggle("ni-eye-off");
-        });
-    </script>
-    <script src="./assets/js/bundle.js?ver=1.9.2"></script>
-    <!-- <script src="./assets/js/datatable-btns.js"></script> -->
-    <script src="./assets/js/scripts.js?ver=1.9.2"></script>
-    <script src="./assets/js/charts/chart-analytics.js?ver=1.9.2"></script>
-    <script src="./assets/js/example-chart.js?ver=1.9.2"></script>
-    <script src="./assets/js/libs/jqvmap.js?ver=1.9.2"></script>
-    <script src="./assets/js/charts/chart-ecommerce.js?ver=1.9.2"></script>
+                // toggle the icon
+                this.classList.toggle("ni-eye-off");
+            });
+        </script>
+        <script src="./assets/js/bundle.js?ver=1.9.2"></script>
+        <!-- <script src="./assets/js/datatable-btns.js"></script> -->
+        <script src="./assets/js/scripts.js?ver=1.9.2"></script>
+        <script src="./assets/js/charts/chart-analytics.js?ver=1.9.2"></script>
+        <script src="./assets/js/example-chart.js?ver=1.9.2"></script>
+        <script src="./assets/js/libs/jqvmap.js?ver=1.9.2"></script>
+        <script src="./assets/js/charts/chart-ecommerce.js?ver=1.9.2"></script>
+    </main>
 </body>
 
 </html>
